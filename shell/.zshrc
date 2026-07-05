@@ -139,10 +139,9 @@ if [[ -f $HOME/.zsh_prompt_aldo_classic ]]; then
   source $HOME/.zsh_prompt_aldo_classic
 fi
 # Aldo Two Lines
-if [[ -f $HOME/.zsh_prompt_aldo_twolines ]]; then
-  source $HOME/.zsh_prompt_aldo_twolines
-fi
-
+# if [[ -f $HOME/.zsh_prompt_aldo_twolines ]]; then
+#   source $HOME/.zsh_prompt_aldo_twolines
+# fi
 
 #eval "$(starship init zsh)"
 
