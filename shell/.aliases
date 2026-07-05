@@ -1,8 +1,12 @@
-#------------------------------------------------------------------#
-# File:     .zsh_aliases   ZSH aliases                             #
-# Version:  0.1.0                                                  #
-# Author:   Aldo Latino <aldolat@gmail.com>                        #
-#------------------------------------------------------------------#
+#----------------------------------------------------------------------#
+# File:        .aliases                                                #
+# Description: Aliases for Bash and Zsh.                               #
+#              This file is read by Bash and Zsh:                      #
+#              ~/.bash_aliases is symlinked to ~/src/dotfiles/.aliases #
+#              ~/.zsh_aliases  is symlinked to ~/src/dotfiles/.aliases #
+# Version:     0.1.0                                                   #
+# Author:      Aldo Latino <aldolat@gmail.com>                         #
+#----------------------------------------------------------------------#
 
 #-----------------------------
 # Filesystem
