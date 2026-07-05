@@ -2,7 +2,7 @@
     "workbench.colorTheme": "Dracula Theme",
     "workbench.startupEditor": "none",
     "editor.fontSize": 18,
-    "editor.fontFamily": "\"JetBrains Mono\", Hack, 'monospace', monospace",
+    "editor.fontFamily": "'JetBrains Mono', 'DejaVu Sans Mono', Hack, monospace",
     "editor.fontLigatures": true,
     "workbench.colorCustomizations": {
         "sash.hoverBorder": "#64227c",
