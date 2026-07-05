@@ -1,0 +1,41 @@
+#------------------------------------------------------------------#
+# File:        .zsh_prompt_aldo_twolines                           #
+# Description: ZSH prompt Aldo Two Lines                           #
+# Version:     0.1.0                                               #
+# Author:      Aldo Latino <aldolat@gmail.com>                     #
+#------------------------------------------------------------------#
+
+#-----------------------------
+# Prompt theme Aldo Classico 2 linee
+# Outputs:
+# 16:58:30 [~/path/to/directory] [master|✔]
+# aldo@zen $
+#-----------------------------
+ZSH_THEME_GIT_PROMPT_PREFIX=" %B["
+ZSH_THEME_GIT_PROMPT_SUFFIX="%B]"
+PROMPT='%B%F{blue}%D{%H:%M:%S}%f %F{green}[%F{yellow}%~%F{green}]$(gitprompt)
+%B%F{green}%n@%m%f%b %F{white}%(!.#.$)%f '
+
+# Aggiungiamo una riga vuota prima del prompt successivo e dopo aver dato un comando
+# C'è anche un hack per evitare la riga vuota prima del prompt iniziale e dopo eventuali clear e reset.
+precmd() {
+   if [[ -n $PRECMD_SKIP_NEXT ]]; then
+       PRECMD_SKIP_NEXT=""
+       return
+   fi
+   if [[ -n $PRECMD_INITIALIZED ]]; then
+       echo ""
+   else
+       PRECMD_INITIALIZED=1
+   fi
+}
+
+clear() {
+   command clear
+   PRECMD_SKIP_NEXT=1 # Evita la riga vuota dopo il comando clear
+}
+
+reset() {
+   command reset
+   PRECMD_SKIP_NEXT=1 # Evita la riga vuota dopo il comando reset
+}

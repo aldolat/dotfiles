@@ -1,0 +1,41 @@
+[user]
+	name = Aldo Latino
+	email = aldolat@gmail.com
+	signingKey = 9354AC6ADE684E72F221BE0360FFD8BC4C8E611F
+[credential]
+	helper = cache --timeout 2592000
+[core]
+	editor = nano
+	excludesfile = /home/aldo/.gitignore_global
+	pager = delta
+[gui]
+	fontui = -family \"DejaVu Sans Mono\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"DejaVu Sans Mono\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+	spellingdictionary = none
+	tabsize = 4
+[color]
+	ui = true
+[push]
+	default = simple
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[tag]
+	forceSignAnnotated = true
+	gpgsign = true
+[init]
+	defaultBranch = master
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    # dark = true      # or light = true, or omit for auto-detection
+    side-by-side = true
+[merge]
+    conflictstyle = zdiff3

@@ -1,0 +1,39 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.directory
+
+# VS Code #
+###########################
+.markdownlint.json
+.vscode
+
+# Ignore LaTeX auxiliary files #
+################################
+*.aux
+*.bbl
+*.bbl-SAVE-ERROR
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc*
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv

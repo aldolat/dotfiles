@@ -1,0 +1,15 @@
+#------------------------------------------------------------------#
+# File:        .zsh_prompt_aldo_classic                            #
+# Description: ZSH prompt Aldo Classic                             #
+# Version:     0.1.0                                               #
+# Author:      Aldo Latino <aldolat@gmail.com>                     #
+#------------------------------------------------------------------#
+
+#-----------------------------
+# Prompt theme Aldo Classic
+# Outputs:
+# 07:02:06 aldo@zen [~/path/to/directory {master|✔}]$
+#-----------------------------
+ZSH_THEME_GIT_PROMPT_PREFIX=" {"
+ZSH_THEME_GIT_PROMPT_SUFFIX="}"
+PROMPT='%B%F{blue}%D{%H:%M:%S}%f %F{green}%n@%m [%F{yellow}%1~%b%F{white}$(gitprompt)%B%F{green}]%b%F{white}%(!.#.$)%f '
