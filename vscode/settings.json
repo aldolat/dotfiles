@@ -103,4 +103,5 @@
             ]
         }
     ],
+    "diffEditor.hideUnchangedRegions.enabled": true,
 }
