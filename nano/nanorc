@@ -1,0 +1,11 @@
+set autoindent
+set smarthome
+set softwrap
+set tabstospaces
+
+## Require Nano version > 4.8
+set indicator
+set minibar
+
+# Includi l'evidenziazione della sintassi
+include "/usr/share/nano/*.nanorc"
