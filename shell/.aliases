@@ -30,26 +30,6 @@ alias aggiorna_repo_germania='sudo reflector --verbose --country Germany --proto
 alias aggiorna_repo_italia='sudo reflector --verbose --country Italy --protocol https --age 6 --sort rate --latest 5 --save /etc/pacman.d/mirrorlist'
 
 #-----------------------------
-# Apache
-#-----------------------------
-# Gli alias `server_*` sono disabilitati perché uso il server Apache su macchina virtuale.
-# alias server_start='sudo service apache2 start && sudo service mysql start && sudo service vsftpd start'
-# alias server_stop='sudo service apache2 stop && sudo service mysql stop && sudo service vsftpd stop'
-# alias server_restart='sudo service apache2 restart && sudo service mysql restart && sudo service vsftpd restart'
-# alias server_status='sudo service apache2 status && sudo service mysql status && sudo service vsftpd status'
-# alias server_cambia_permessi='sudo chown -R aldo /var/www/ && sudo chgrp -R www-data /var/www/ && sudo chmod u+rw,g+rw,o=r -R /var/www/*'
-# alias server_cambia_permessi='sudo chown -R aldo:www-data /home/aldo/vhosts/ && sudo chmod u+rw,g+rw,o=r -R /home/aldo/vhosts/*'
-# alias monta_vhosts='sudo mount -t nfs 192.168.0.50:/home/aldo/vhosts /home/aldo/vhosts/'
-# alias smonta_vhosts='sudo umount /home/aldo/vhosts'
-
-#-----------------------------
-# Hugo
-#-----------------------------
-# Disabilitati perché ho uno script in ~/.local/bin.
-# alias deploy='cd /home/aldo/sites/aldolat && hugo && rsync -avz --rsh="ssh -p10223" --delete --exclude-from ".rsync-exclude" public/ bkaldola@aldolat.it:/home/bkaldola/public_html/ && rm -rf public/'
-# alias deploy_dryrun='cd /home/aldo/sites/aldolat && hugo && rsync -avz --rsh="ssh -p10223" --delete --exclude-from ".rsync-exclude" --dry-run public/ bkaldola@aldolat.it:/home/bkaldola/public_html/ && rm -rf public/'
-
-#-----------------------------
 # Rete
 #-----------------------------
 alias my_local_ip="ip addr show | awk '/inet / {print \$2}' | cut -d '/' -f 1"
@@ -69,11 +49,6 @@ alias gitlogall='git log --all --oneline --decorate --graph'
 alias firma_interna='gpg --sign --armour '
 alias firma_staccata='gpg --detach-sign --armour '
 alias verifica='gpg --verify '
-
-#-----------------------------
-# Grafica
-#-----------------------------
-# alias scansiona='scanimage --resolution=300dpi --mode=Color --format=tiff --output-file scansione.tif --progress'
 
 #-----------------------------
 # Docker
